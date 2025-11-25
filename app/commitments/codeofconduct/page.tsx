@@ -1,15 +1,12 @@
 import { AppSidebar } from "@/components/app-sidebar"
-import { ChartAreaInteractive } from "@/components/chart-area-interactive"
-// import { DataTable } from "@/components/data-table"
-import { SectionCards } from "@/components/section-cards"
 import { SiteHeader } from "@/components/site-header"
-import  CommitToCodeOfConduct  from "@/components/commit-to-code-of-conduct-form"
+import  CodeOfConduct  from "@/components/commit-to-code-of-conduct-form"
 
 import {
   SidebarInset,
   SidebarProvider,
 } from "@/components/ui/sidebar"
-import Declarations from "@/components/history"
+
 
 
 
@@ -32,7 +29,7 @@ export default function Page() {
              
               <div className="px-4 lg:px-6">
                 
-                <CommitToCodeOfConduct/>
+                <CodeOfConduct/>
               
               </div>
               {/* <DataTable data={data} /> */}

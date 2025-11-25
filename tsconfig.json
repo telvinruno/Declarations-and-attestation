@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "components/declarations.js"  ],
+, "components/declarations.js", "components/FAQs.js"  ],
   "exclude": ["node_modules"]
 }

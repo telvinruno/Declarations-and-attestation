@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header"
-import Page from "./page"
-import { ToastProvider } from "@/components/ui/toast";
+import {ChatbotWidget} from "@/components/chat-widget"
 
 
 
@@ -19,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ENC Declarations and Attestations page",
-  description: "An ENC application for making declarations and attestations",
+  title: "E&C Declarations and Attestations portal",
+  description: "Ethics and Compliance application for making declarations and attestations",
 };
 
 export default function RootLayout({
@@ -31,9 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-y-hidden` } >
           
-          <div>
+          <div >
             <div>
                <Header/>
             </div>
@@ -45,7 +44,7 @@ export default function RootLayout({
             </div>
           </div>
 
-           
+           <ChatbotWidget/>
 
          {children}
       </body>

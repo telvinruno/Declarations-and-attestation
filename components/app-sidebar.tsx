@@ -65,12 +65,12 @@ const data = {
     },
     {
       title: "FAQs",
-      url: "FAQs",
+      url: "/FAQs",
       icon: IconQuestionMark,
     },
     {
       title: "Make a report",
-      url: "reportissue",
+      url: "/reportissue",
       icon: IconMessageReport,
     },
   ]
@@ -78,29 +78,12 @@ const data = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="offcanvas" {...props}>
-      <SidebarHeader>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            {/* <SidebarMenuButton
-              asChild
-              className="data-[slot=sidebar-menu-button]:!p-1.5"
-            >
-              <a href="#">
-                <IconInnerShadowTop className="!size-5" />
-                <span className="text-base font-semibold">Acme Inc.</span>
-              </a>
-            </SidebarMenuButton> */}
-          </SidebarMenuItem>
-        </SidebarMenu>
-      </SidebarHeader>
+    <Sidebar  {...props} className="bg-white">
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
+        <NavMain items={data.navMain} className="h-3/7 fixed top-30 left-4" />
+        <div className="h-2/7"></div>
+        <NavSecondary items={data.navSecondary} className="fixed bottom-4 left-4" />
       </SidebarContent>
-      <SidebarFooter>
-        {/* <NavUser user={data.user} /> */}
-      </SidebarFooter>
     </Sidebar>
   )
 }

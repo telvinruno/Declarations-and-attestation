@@ -2,8 +2,10 @@ import Image from 'next/image'
 import commitToCodeOfConduct from '../public/Commit to code of conduct.png'
 import insiderTrader from '../public/insider trader.png'
 import declareGift from '../public/Declare gift.png'
+import confirmtraining from '../public/Confirm-training.png'
 import Link from "next/link"
 import CommitToCodeOfConduct from './commit-to-code-of-conduct-form'
+import { Button } from "@/components/ui/button"
 
 export function ClickableCardLink() {
   return (
@@ -18,26 +20,24 @@ export function ClickableCardLink() {
  
 export default function Declaration() {
   return (
-    <div style={styles.superContainer}>
+    <div style={styles.superContainer} className='mx-15 bg-gray-200'>
      <div style={styles.mainContainer}>
-
+       <h1 className="font-bold text-xl my-5">Available Attestations</h1>
 
         <div style={styles.mainSubContainer} >
             <div style={styles.contentHolder}>
                 <h1 style={{fontWeight: 'bold'}}>Commit to code of conduct</h1>
                 <p style={{ fontSize: '17px' }}>Confirm your commitment to the company's code of conduct by completing this declaration</p>
                 <Link href="/commitments/codeofconduct">
-                <button style={styles.button}>Start commitment</button>
+                 <Button className="block w-full sm:inline-flex sm:w-auto items-center justify-center rounded-md b-green-500 px-4 py-2 text-sm font-medium text-white my-3">Start commitment</Button>
                 </Link>
 
             </div>
-            <div>
+            <div style={styles.imageHolder}>
                    <Image 
                       src={commitToCodeOfConduct}
-                      alt="Error" 
-                      width={250} 
-                      height={300} 
-                      style={{ borderRadius: '0px 5px 5px 0px' }} 
+                      alt="Error"  
+                      style={{ borderRadius: '0px 5px 5px 0px', width:'100%' }} 
                   />
             </div>
 
@@ -47,21 +47,19 @@ export default function Declaration() {
 
         <div style={styles.mainSubContainer}>
             <div style={styles.contentHolder}>
-                <h1 style={{fontWeight: 'bold'}}>Commit to insider trade policy</h1>
+                <h1 style={{fontWeight: 'bold'}}>Commit to insider trader policy</h1>
                 <p style={{ fontSize: '17px' }}>Use this form to commit to the company's insider trading policy</p>
                 <Link href="/commitments/insidertrader">
-                <button style={styles.button}>Start commitment</button>
+                 <Button className="block w-full sm:inline-flex sm:w-auto items-center justify-center rounded-md b-green-500 px-4 py-2 text-sm font-medium text-white my-3">Start commitment</Button>
                 </Link>
 
             </div>
-            <div>
+            <div style={styles.imageHolder}>
               
             <Image 
               src={insiderTrader} 
               alt="Example Image" 
-              width={250} 
-              height={300}
-              style={{ borderRadius: '0px 5px 5px 0px' }} 
+              style={{ borderRadius: '0px 5px 5px 0px', width:'100%' }} 
            />
 
             </div>
@@ -75,18 +73,16 @@ export default function Declaration() {
                 <h1 style={{fontWeight: 'bold'}}>Confirm training</h1>
                 <p style={{ fontSize: '17px' }} >Use this form to confirm training received</p>
                 <Link href="/commitments/confirmtraining">
-                <button style={styles.button}>Start Confirmation</button>
+                 <Button className="block w-full sm:inline-flex sm:w-auto items-center justify-center rounded-md b-green-500 px-4 py-2 text-sm font-medium text-white my-3">Start confirmation</Button>
                 </Link>
 
             </div>
-            <div>
+            <div style={styles.imageHolder} >
 
                   <Image 
-                      src={declareGift} 
-                      alt="Example Image" 
-                      width={250} 
-                      height={300} 
-                      style={{ borderRadius: '0px 5px 5px 0px' }} 
+                      src={confirmtraining} 
+                      alt="Example Image"  
+                      style={{ borderRadius: '0px 5px 5px 0px', width:'100%' }} 
                       />
 
             </div>
@@ -127,29 +123,26 @@ const styles = {
 
   mainSubContainer: {
     display: 'flex',
-    justifyContent:'space-between',
     backgroundColor:'#ffffff',
-    marginBottom: '20px',
-    borderRadius:'5px'
-  },
-
-  button:{
-    width:'135px',
-    height:'35px',
-    backgroundColor:'#35A839',
-    borderRadius: '5px 5px 5px 5px',
-    fontSize:'13px',
-    textAlign:'center',
-    paddingTop:'5.8px',
-    marginTop:'20px',
-    color:'white'
+    marginBottom: '3vh',
+    borderRadius:'5px',
+    width:'100%',
+   
     
   },
 
+
   contentHolder:{
    display:'flex-start',
-   paddingLeft:'25px',
-   paddingTop: '15px',
+   paddingLeft:'1.5vw',
+   paddingTop: '2vh',
+   width:'100%'
+    
+  },
+
+
+  imageHolder:{
+   width:'25%'
     
   }
 };

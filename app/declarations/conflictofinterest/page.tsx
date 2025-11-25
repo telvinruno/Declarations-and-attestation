@@ -1,15 +1,12 @@
 import { AppSidebar } from "@/components/app-sidebar"
-import { ChartAreaInteractive } from "@/components/chart-area-interactive"
-// import { DataTable } from "@/components/data-table"
-import { SectionCards } from "@/components/section-cards"
 import { SiteHeader } from "@/components/site-header"
-import  CommitToCodeOfConduct  from "@/components/commit-to-code-of-conduct-form"
 
 import {
   SidebarInset,
   SidebarProvider,
 } from "@/components/ui/sidebar"
-import Declarations from "@/components/history"
+import ConflictOfInterestType from "@/components/conflictofinterestype"
+import { ScrollArea } from "@radix-ui/react-scroll-area"
 
 
 
@@ -26,19 +23,20 @@ export default function Page() {
       <AppSidebar variant="inset" />
       <SidebarInset>
         <SiteHeader />
-        <div className="flex flex-1 flex-col">
-          <div className="@container/main flex flex-1 flex-col gap-2">
-            <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
-             
-              <div className="px-4 lg:px-6">
-                
-                <CommitToCodeOfConduct/>
-              
+        <ScrollArea className="h-screen rounded-md">
+          <div className="flex flex-1 flex-col space-y-4 pb-32">
+            <div className="@container/main flex flex-1 flex-col gap-2">
+              <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
+                <div className="px-4 lg:px-6">
+                  <div className="container mx-13 w-4/5 py-10">
+                    <ConflictOfInterestType />
+                    <div className="h-8" />
+                  </div>
+                </div>
               </div>
-              {/* <DataTable data={data} /> */}
             </div>
           </div>
-        </div>
+        </ScrollArea>
       </SidebarInset>
     </SidebarProvider>
   )

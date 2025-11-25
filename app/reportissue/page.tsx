@@ -1,14 +1,10 @@
 import { AppSidebar } from "@/components/app-sidebar"
-import { ChartAreaInteractive } from "@/components/chart-area-interactive"
-// import { DataTable } from "@/components/data-table"
-import { SectionCards } from "@/components/section-cards"
 import { SiteHeader } from "@/components/site-header"
-import  ProfileForm  from "@/components/report-issue-form"
 import {
   SidebarInset,
   SidebarProvider,
 } from "@/components/ui/sidebar"
-import Declarations from "@/components/history"
+import ReportChannels from "@/components/report-channels"
 
 
 
@@ -30,9 +26,7 @@ export default function Page() {
             <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
              
               <div className="px-4 lg:px-6">
-                
-                <ProfileForm/>
-              
+                <ReportChannels/>
               </div>
               {/* <DataTable data={data} /> */}
             </div>
