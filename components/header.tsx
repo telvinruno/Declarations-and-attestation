@@ -126,20 +126,13 @@ const styles = {
         display:'flex',
         justifyContent:'space-between',
         alignItems:'center',
-        width:'100vw'
+        width:'100vw',
+        height:'12vh'
     },
     profile:{
         fontSize:'20px'
     },
-    // navList:{
-    //     listStyle:'none',
-    //     display:'flex',
-    //     gap:'2%',
-    //     width:'50vw',
-    //     justifyContent:'flex-end',
-    //     height:'80%'
-
-    // },
+ 
     logo:{
         paddingLeft:'15%'
     }

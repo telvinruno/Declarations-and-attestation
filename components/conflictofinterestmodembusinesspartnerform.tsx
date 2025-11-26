@@ -108,8 +108,8 @@ export default function BusinessPartnerForm() {
 
   return (
     <div className="w-full h-screen bg-background flex flex-col">
-      <div className="flex-1 px-4 py-6 ">
-        <div className="mx-10 w-3/4">
+      <div className="flex-1 px-4 py-1 ">
+        <div className="mx-1 w-full">
           {/* Heading */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-foreground">Business Partner Employee Details</h1>

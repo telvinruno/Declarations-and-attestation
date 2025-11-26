@@ -157,7 +157,7 @@ export default function FamilyRelationsForm() {
   }
 
   return ( 
-    <div className="w-3/4 mx-13 my-10 bg-white p-5 rounded-md border">
+    <div className="w-full mx-5 my-1 bg-white p-5 rounded-md border">
       <div className="">
         {/* Header */}
         <div className="mb-8">

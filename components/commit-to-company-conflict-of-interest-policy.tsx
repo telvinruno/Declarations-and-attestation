@@ -49,14 +49,14 @@ export default function ConflictOfInterestPolicy() {
 
   return (
     <>
-      <div className="w-4/5 ml-[4%] mt-[2%] my- p-6 bg-white rounded-lg h-full border">
+      <div className="w-4/5 ml-[4%] mt-1  p-6 bg-white rounded-lg h-screen border">
         {/* Title */}
-        <div className="mb-6">
-          <h1 className="text-3xl font-bold text-foreground mb-2">Code of Conduct Commitment</h1>
+        <div className="mb-2">
+          <h1 className="text-3xl font-bold text-foreground mb-1">Conflict of interest policy</h1>
         </div>
 
         {/* Grayed Out Content Area */}
-        <div className="mb-6 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 max-h-96 overflow-y-auto">
+        <div className="mb-4 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 max-h-96 overflow-y-auto">
           <h2 className="text-lg font-semibold text-foreground mb-4">Please review and acknowledge our company's conflict of interest policy</h2>
           <ul className="space-y-3">
             {conflictOfInterestPolicies.map((item, index) => (
@@ -76,7 +76,7 @@ export default function ConflictOfInterestPolicy() {
               id="agree"
               checked={agreed}
               onChange={(e) => setAgreed(e.target.checked)}
-              className="w-5 h-5 bg-green-600 cursor-pointer mt-1"
+              className="w-5 h-4 bg-green-600 cursor-pointer mt-1"
             />
             <label htmlFor="agree" className="text-foreground/80 cursor-pointer">
               I have read, understood, and agree to comply with the Code of Conduct outlined above.
@@ -86,7 +86,7 @@ export default function ConflictOfInterestPolicy() {
           <Button
             type="submit"
             disabled={!agreed || isSubmitting}
-            className="block w-full sm:inline-flex sm:w-auto items-center justify-center rounded-md b-green-500 px-4 py-2 text-sm font-medium text-white my-3"
+            className="block w-full sm:inline-flex sm:w-auto items-center justify-center rounded-md b-green-500 px-4 py-2 text-sm font-medium text-white my-1"
           >
             {isSubmitting ? "Submitting..." : "Submit Commitment"}
           </Button>

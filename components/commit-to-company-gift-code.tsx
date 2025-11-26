@@ -69,16 +69,16 @@ export default function CodeOfConduct() {
 
   return (
     <>
-      <div className="w-3/4 mx-13 my-5 p-6 bg-white dark:bg-slate-900 rounded-lg border">
+      <div className="w-3/4 mx-13 my-1 p-6 bg-white dark:bg-slate-900 rounded-lg border h-screen">
         {/* Title */}
-        <div className="mb-6">
+        <div className="mb-1">
           <h1 className="text-3xl font-bold text-foreground mb-2">Company Code on Gifts and Rewards</h1>
         </div>
 
         {/* Grayed Out Content Area */}
-        <div className="mb-6 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 max-h-96 overflow-y-auto">
-          <h2 className="text-lg font-semibold text-foreground mb-4">Please review and acknowledge commitement to the codes outlined below</h2>
-          <ul className="space-y-3">
+        <div className="mb-2 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 max-h-96 overflow-y-auto">
+          <h2 className="text-lg font-semibold text-foreground mb-2">Please review and acknowledge commitement to the codes outlined below</h2>
+          <ul className="space-y-2">
             {conductItems.map((item, index) => (
               <li key={index} className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
@@ -90,7 +90,7 @@ export default function CodeOfConduct() {
 
         {/* Checkbox and Submit */}
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="flex items-start gap-3">
+          <div className="flex items-start gap-1">
             <input
               type="checkbox"
               id="agree"
@@ -105,7 +105,7 @@ export default function CodeOfConduct() {
          <Link href="/declarations/gift/adddeclaration">
           <Button
             disabled={!agreed}
-            className="block w-full sm:inline-flex sm:w-auto items-center justify-center rounded-md b-green-500 px-4 py-2 text-sm font-medium text-white my-3"
+            className="block w-full sm:inline-flex sm:w-auto items-center justify-center rounded-md b-green-500 px-4 py-1 text-sm font-medium text-white my-1"
           >
            Add declaration
           </Button>

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Declaration() {
   return (
-    <div style={styles.superContainer} className='mx-15'>
+    <div style={styles.superContainer} className='mx-10'>
      <div style={styles.mainContainer}>
      <h1 className="font-bold text-xl my-5">Available Declarations</h1>
 

@@ -15,7 +15,7 @@ export default function Page() {
     <SidebarProvider
       style={
         {
-          "--sidebar-width": "calc(var(--spacing) * 80)",
+          "--sidebar-width": "calc(var(--spacing) * 65)",
           "--header-height": "calc(var(--spacing) * 10)",
         } as React.CSSProperties
       }
@@ -28,7 +28,7 @@ export default function Page() {
             <div className="@container/main flex flex-1 flex-col gap-2">
               <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
                 <div className="px-4 lg:px-6">
-                  <div className="container mx-13 w-4/5 py-10">
+                  <div className="container mx-12 w-4/5 py-8">
                     <ConflictOfInterestType />
                     <div className="h-8" />
                   </div>

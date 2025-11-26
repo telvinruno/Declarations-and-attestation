@@ -75,8 +75,8 @@ export default function OutsideEngagementsForm() {
   }
 
   return (
-    <div className=" min-h-screen max-h-screen bg-background ">
-      <div className="w-70% space-y-6">
+    <div className=" mx-2 h-[60vh] w-[60vw] bg-background ">
+      <div className="w-70% space-y-4">
         {/* Heading */}
         <div>
           <h1 className="text-3xl font-bold text-foreground">Outside Engagements</h1>

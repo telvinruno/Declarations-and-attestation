@@ -14,8 +14,8 @@ export default function ConflictOfInterestMode() {
   }
 
   return (
-    <div className="flex mx-15 h-[70vh] w-[60vw] m-[2%_0px_0px_5%]">
-      <div className="flex flex-col w-full gap-5">
+    <div className="flex mx-15 h-[60vh] w-[60vw]">
+      <div className="flex flex-col w-full gap-2">
         <h1 className="font-bold text-xl my-5">Select Conflict of Interest Type</h1>
         <p>
           Please select the type of conflict of interest you wish to declare. Each type has a specific form to ensure

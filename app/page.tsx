@@ -14,7 +14,7 @@ export default function Page() {
     <SidebarProvider
       style={
         {
-          "--sidebar-width": "calc(var(--spacing) * 80)",
+          "--sidebar-width": "calc(var(--spacing) * 65)",
           "--header-height": "calc(var(--spacing) * 10)",
 
         } as React.CSSProperties

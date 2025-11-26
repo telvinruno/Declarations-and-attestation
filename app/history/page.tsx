@@ -118,7 +118,7 @@ export default function DemoPage() {
     <SidebarProvider
       style={
         {
-          "--sidebar-width": "calc(var(--spacing) * 80)",
+          "--sidebar-width": "calc(var(--spacing) * 65)",
           "--header-height": "calc(var(--spacing) * 10)",
         } as React.CSSProperties
       }
@@ -131,7 +131,7 @@ export default function DemoPage() {
             <div className="@container/main flex flex-1 flex-col gap-2 ">
               <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6  border ">
                 <div className="px-4 lg:px-6 ">
-                  <div className="container mx-13 my-10 rounded w-4/5 p-5 bg-white border-l">
+                  <div className="container mx-13 my-5 rounded w-4/5 p-5 bg-white border-l">
                   <div className="text-xl font-bold">Your history for the last 3 months</div>
                     <DataTableWithModal columns={columns} data={data} />
                     <div className="h-8" />

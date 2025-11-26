@@ -65,7 +65,7 @@ export default function ProfileForm() {
   }
 
   return (
-    <div className="w-full  mx-1% py-10 px-4">
+    <div className="w-full  mx-1% py-2 px-4">
       <Form {...form} >
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 ">
           <FormField

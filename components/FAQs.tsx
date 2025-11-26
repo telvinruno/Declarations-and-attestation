@@ -50,7 +50,7 @@ export function FAQs() {
   }
 
   return (
-    <section className="w-full mx-1% py-12 px-4">
+    <section className="w-full mx-1% py-1 px-4">
       <div className="mb-10">
         <h2 className="text-3xl font-bold text-foreground mb-2">Frequently Asked Questions</h2>
         <p className="text-muted-foreground">Find answers to common questions about attestations and declarations</p>

@@ -20,9 +20,9 @@ export function ClickableCardLink() {
  
 export default function Declaration() {
   return (
-    <div style={styles.superContainer} className='mx-15 bg-gray-200'>
+    <div style={styles.superContainer} className='mx-12 bg-gray-200'>
      <div style={styles.mainContainer}>
-       <h1 className="font-bold text-xl my-5">Available Attestations</h1>
+       <h1 className="font-bold text-xl my-3">Available Attestations</h1>
 
         <div style={styles.mainSubContainer} className='border' >
             <div style={styles.contentHolder}>
@@ -142,7 +142,8 @@ const styles = {
 
 
   imageHolder:{
-   width:'25%'
+   width:'25%',
+   height:'100%'
     
   }
 };

@@ -61,10 +61,10 @@ export function ChatbotWidget() {
   }
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className="fixed bottom-3 right-6 z-50">
       {/* Chat Window */}
       {isOpen && (
-        <div className="mb-4 w-96 flex flex-col h-[500px] bg-card border border-primary rounded-lg shadow-2xl overflow-hidden">
+        <div className="mb-4 w-80 flex flex-col h-[400px] bg-card border border-primary rounded-lg shadow-2xl overflow-hidden">
           {/* Header */}
           {/* <div className="bg-gradient-to-r from-primary to-accent p-4 flex items-center justify-between"> */}
           <div className="bg-primary p-4 flex items-center justify-between">
@@ -146,10 +146,10 @@ export function ChatbotWidget() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="neon-glow w-14 h-14 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+        className="neon-glow w-12 h-12 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         aria-label="Open chat"
       >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
