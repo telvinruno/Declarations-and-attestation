@@ -192,7 +192,7 @@ function SidebarMenuItem(props: React.ComponentProps<"li">) {
 }
 
 const sidebarMenuButtonVariants = cva(
-  "flex w-full items-center gap-2 rounded-md p-2 text-sm hover:bg-sidebar-accent",
+  "flex w-50 items-center gap-2 p-2 text-sm hover:bg-sidebar-accent hover:border-r-4 hover:border-green-600 ",
   {
     variants: { size: { default: "h-8", sm: "h-7", lg: "h-12" } },
     defaultVariants: { size: "default" },
