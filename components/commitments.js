@@ -1,10 +1,9 @@
 import Image from 'next/image'
 import commitToCodeOfConduct from '../public/Commit to code of conduct.png'
 import insiderTrader from '../public/insider trader.png'
-import declareGift from '../public/Declare gift.png'
 import confirmtraining from '../public/Confirm-training.png'
 import Link from "next/link"
-import CommitToCodeOfConduct from './commit-to-code-of-conduct-form'
+
 import { Button } from "@/components/ui/button"
 
 export function ClickableCardLink() {

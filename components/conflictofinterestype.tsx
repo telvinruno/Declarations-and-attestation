@@ -1,9 +1,16 @@
 import Link from "next/link"
 import { FaGreaterThan } from "react-icons/fa6"
-import { TbUsersGroup } from "react-icons/tb"
-import { LuBriefcaseBusiness } from "react-icons/lu";
-import { VscLinkExternal } from "react-icons/vsc";
-import { CiSquareMinus } from "react-icons/ci";
+// import { TbUsersGroup } from "react-icons/tb"
+// import { LuBriefcaseBusiness } from "react-icons/lu";
+// import { VscLinkExternal } from "react-icons/vsc";
+// import { CiSquareMinus } from "react-icons/ci";
+
+
+import Image from 'next/image'
+import family from '../public/icons8-users-64.png'
+import business from '../public/icons8-group-of-companies-64.png'
+import external from '../public/icons8-external-link-64.png'
+import nada from '../public/icons8-minus-key-64.png'
 
 export default function ConflictOfInterestType() {
   return (
@@ -18,11 +25,17 @@ export default function ConflictOfInterestType() {
         {/* First item */}
         <div className="flex justify-center h-1/4">
           <div className="flex w-full bg-white justify-start rounded-lg border">
-            <div className="flex items-center px-4 py-2">
-              <TbUsersGroup size={25} />
+            <div className="flex items-center px-4 py-2 text-blue-500 ">
+              {/* <TbUsersGroup size={25} /> */}
+                   <Image 
+                      src={family}
+                      alt="Error"  
+                      style={{ width:'100%' }} 
+                  />
+
             </div>
             <div className="flex flex-col justify-start py-1 px-4 flex-1 ">
-              <h1>Family Relations</h1>
+              <h1><b>Family Relations</b></h1>
               <p>Declare relationships that may pose a threat</p>
             </div>
 
@@ -38,11 +51,15 @@ export default function ConflictOfInterestType() {
         {/* Second item */}
         <div className="flex justify-center h-1/4">
           <div className="flex w-full bg-white justify-start rounded-lg border">
-            <div className="flex items-center px-4 py-2">
-              <LuBriefcaseBusiness size={25}  />
+            <div className="flex items-center px-4 py-2 text-blue-500">
+                   <Image 
+                      src={business}
+                      alt="Error"  
+                      style={{ width:'100%' }} 
+                  />
             </div>
             <div className="flex flex-col justify-start py-1 px-4 flex-1">
-              <h1>Business Interest</h1>
+              <h1><b>Business Interest</b></h1>
               <p>Declare any personal business interest</p>
             </div>
 
@@ -58,11 +75,15 @@ export default function ConflictOfInterestType() {
         {/* Third item */}
         <div className="flex justify-center h-1/4">
           <div className="flex w-full bg-white justify-start rounded-lg border">
-            <div className="flex items-center px-4 py-2">
-              <VscLinkExternal size={25}  />
+            <div className="flex items-center px-4 py-2 text-blue-500">
+                     <Image 
+                      src={external}
+                      alt="Error"  
+                      style={{ width:'100%' }} 
+                  />
             </div>
             <div className="flex flex-col justify-start py-1 px-4 flex-1">
-              <h1>Outside Engagements</h1>
+              <h1><b>Outside Engagements</b></h1>
               <p>Declare external roles or commitments</p>
             </div>
 
@@ -84,11 +105,15 @@ export default function ConflictOfInterestType() {
         {/* Fourth item */}
         <div className="flex justify-center h-1/4">
           <div className="flex w-full bg-white justify-start rounded-lg border">
-            <div className="flex items-center px-4 py-2">
-              <CiSquareMinus size={25} />
+            <div className="flex items-center px-4 py-2 text-blue-500">
+                    <Image 
+                      src={nada}
+                      alt="Error"  
+                      style={{ width:'100%' }} 
+                  />
             </div>
             <div className="flex flex-col justify-start py-1 px-4 flex-1">
-              <h1>I have nothing to declare at this time</h1>
+              <h1><b>I have nothing to declare at this time</b></h1>
               <p>Read the policy carefully to determine if you have conflict to declare</p>
             </div>
             <div className="flex items-center px-4 pr-10">
