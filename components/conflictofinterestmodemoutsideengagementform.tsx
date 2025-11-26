@@ -200,16 +200,16 @@ export default function OutsideEngagementsForm() {
                   <div className="flex gap-3 w-full pt-4">
                     <Button
                       onClick={() => setShowSuccess(false)}
-                      className="flex-1 border border-input bg-white text-foreground hover:bg-background rounded-md"
+                      className="flex-1 border border-input bg-green-600 text-foreground hover:bg-background rounded-md"
                     >
                       Back
                     </Button>
-                    <Button
+                    {/* <Button
                       onClick={handleForward}
                       className="flex-1 bg-green-600 hover:bg-green-700 text-white rounded-md"
                     >
                       Forward to Safaricom Foundation
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </CardContent>

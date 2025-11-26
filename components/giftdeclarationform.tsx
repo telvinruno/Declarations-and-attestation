@@ -166,6 +166,7 @@ export default function GiftDeclarationForm() {
                   placeholder="e.g., Individual, Company, Organization"
                   value={formData.natureOfGifter}
                   onChange={handleChange}
+                  className="bg-white focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
                 />
               </div>
 
@@ -179,7 +180,7 @@ export default function GiftDeclarationForm() {
                     value={formData.natureOfRelationship}
                     onChange={handleChange}
                     required
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     <option value="">Select a relationship</option>
                     <option value="business-partner">Business Partner</option>
@@ -214,6 +215,7 @@ export default function GiftDeclarationForm() {
                   placeholder="Organization name"
                   value={formData.giftersOrganization}
                   onChange={handleChange}
+                  className="bg-white"
                 />
               </div>
 
@@ -227,6 +229,7 @@ export default function GiftDeclarationForm() {
                     type="date"
                     value={formData.dateGiftOffered}
                     onChange={handleChange}
+                    className="bg-white"
                   />
                 </div>
 
@@ -238,6 +241,7 @@ export default function GiftDeclarationForm() {
                     placeholder="City, Country"
                     value={formData.locationGiftOffered}
                     onChange={handleChange}
+                    className="bg-white"
                   />
                 </div>
               </div>
@@ -252,7 +256,7 @@ export default function GiftDeclarationForm() {
                   value={formData.description}
                   onChange={handleChange}
                   required
-                  className="flex min-h-[100px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex min-h-[100px] w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 />
               </div>
 
@@ -266,7 +270,7 @@ export default function GiftDeclarationForm() {
                     value={formData.typeOfGift}
                     onChange={handleChange}
                     required
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     <option value="">Select a type</option>
                     <option value="cash">Cash</option>
@@ -287,6 +291,7 @@ export default function GiftDeclarationForm() {
                     step="0.01"
                     value={formData.estimatedValue}
                     onChange={handleChange}
+                    className="bg-white"
                   />
                 </div>
               </div>
@@ -300,7 +305,7 @@ export default function GiftDeclarationForm() {
                   value={formData.didReceiveGift}
                   onChange={handleChange}
                   required
-                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   <option value="">Select an option</option>
                   <option value="yes">Yes</option>

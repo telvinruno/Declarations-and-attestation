@@ -15,7 +15,7 @@ return (
     <SidebarProvider
       style={
         {
-          "--sidebar-width": "calc(var(--spacing) * 65)",
+          "--sidebar-width": "calc(var(--spacing) * 60)",
           "--header-height": "calc(var(--spacing) * 10)",
         } as React.CSSProperties
       }

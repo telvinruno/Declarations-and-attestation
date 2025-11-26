@@ -73,7 +73,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar  {...props} className="bg-white">
       <SidebarContent>
-        <NavMain items={data.navMain} className="h-3/7 fixed top-20 left-4 w-full" />
+        <NavMain items={data.navMain} className="h-3/7 fixed top-23 left-4 w-full" />
         <div className="h-2/7 w-1/4"></div>
         <NavSecondary items={data.navSecondary} className="fixed bottom-3 left-4 w-full" />
       </SidebarContent>

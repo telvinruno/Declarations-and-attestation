@@ -125,7 +125,7 @@ export default function BusinessPartnerForm() {
               <select
                 value={formData.entityType}
                 onChange={(e) => handleInputChange("entityType", e.target.value)}
-                className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-green-600"
+                className="w-full px-4 py-3 border border-input rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-green-600"
               >
                 <option value="">Select Entity type</option>
                 <option value="private">Private Company</option>
@@ -143,8 +143,8 @@ export default function BusinessPartnerForm() {
                 <textarea
                   value={formData.relationship}
                   onChange={(e) => handleInputChange("relationship", e.target.value)}
-                  className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
-                  rows={4}
+                  className="w-full px-4 py-3 border border-input rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
+                  rows={1}
                   placeholder="Describe your relationship..."
                 />
               </div>
@@ -153,8 +153,8 @@ export default function BusinessPartnerForm() {
                 <textarea
                   value={formData.role}
                   onChange={(e) => handleInputChange("role", e.target.value)}
-                  className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
-                  rows={4}
+                  className="w-full px-4 py-3 border border-input rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
+                  rows={1}
                   placeholder="Describe your role..."
                 />
               </div>
@@ -169,8 +169,8 @@ export default function BusinessPartnerForm() {
                 <textarea
                   value={formData.companyName}
                   onChange={(e) => handleInputChange("companyName", e.target.value)}
-                  className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
-                  rows={4}
+                  className="w-full px-4 py-3 border border-input rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
+                  rows={1}
                   placeholder="Enter company name..."
                 />
               </div>
@@ -179,8 +179,8 @@ export default function BusinessPartnerForm() {
                 <textarea
                   value={formData.businessType}
                   onChange={(e) => handleInputChange("businessType", e.target.value)}
-                  className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
-                  rows={4}
+                  className="w-full px-4 py-3 border border-input rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
+                  rows={1}
                   placeholder="Describe type of business..."
                 />
               </div>
@@ -205,7 +205,7 @@ export default function BusinessPartnerForm() {
                     className={`p-4 border-2 rounded-lg cursor-pointer transition-all ${
                       formData.dealingStatus === option.value
                         ? "border-green-600 bg-green-50"
-                        : "border-border bg-background hover:border-green-300"
+                        : "border-border bg-white"
                     }`}
                   >
                     <div className="flex items-center gap-3">
@@ -229,7 +229,7 @@ export default function BusinessPartnerForm() {
                   <textarea
                     value={formData.dealingDescription}
                     onChange={(e) => handleInputChange("dealingDescription", e.target.value)}
-                    className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
+                    className="w-full px-4 py-3 border border-input rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
                     rows={6}
                     placeholder="Describe the nature of dealings..."
                   />
@@ -246,8 +246,8 @@ export default function BusinessPartnerForm() {
                 <textarea
                   value={formData.influenceLevel}
                   onChange={(e) => handleInputChange("influenceLevel", e.target.value)}
-                  className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
-                  rows={4}
+                  className="w-full px-4 py-3 border border-input rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
+                  rows={1}
                   placeholder="Describe your level of influence..."
                 />
               </div>
@@ -256,8 +256,8 @@ export default function BusinessPartnerForm() {
                 <textarea
                   value={formData.financialBenefit}
                   onChange={(e) => handleInputChange("financialBenefit", e.target.value)}
-                  className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
-                  rows={4}
+                  className="w-full px-4 py-3 border border-input rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-green-600 resize-none"
+                  rows={1}
                   placeholder="Describe expected financial benefits..."
                 />
               </div>

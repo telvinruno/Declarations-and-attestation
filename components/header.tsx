@@ -127,7 +127,7 @@ const styles = {
         justifyContent:'space-between',
         alignItems:'center',
         width:'100vw',
-        height:'12vh'
+        height:'10vh'
     },
     profile:{
         fontSize:'20px'

@@ -65,7 +65,7 @@ export function FAQs() {
             {/* Question Header */}
             <button
               onClick={() => toggleItem(item.id)}
-              className="w-full px-6 py-4 flex items-center justify-between bg-card hover:bg-accent/5 transition-colors duration-150"
+              className="w-full px-6 py-4 flex items-center justify-between bg-white hover:bg-accent/5 transition-colors duration-150"
             >
               <h3 className="text-lg font-semibold text-foreground text-left">{item.question}</h3>
               <ChevronDown
