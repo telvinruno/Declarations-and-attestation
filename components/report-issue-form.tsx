@@ -96,7 +96,7 @@ export default function ProfileForm() {
                   <b className="text-lg">Type in the issue you wish to report</b>
                 </FormLabel>
                 <FormControl>
-                  <Textarea className="h-80 w-3/4" placeholder="Type something..." {...field} />
+                  <Textarea className="h-80 w-3/4 bg-white" placeholder="Type something..." {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
