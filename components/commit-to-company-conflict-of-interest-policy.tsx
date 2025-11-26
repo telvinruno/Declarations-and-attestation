@@ -49,7 +49,7 @@ export default function ConflictOfInterestPolicy() {
 
   return (
     <>
-      <div className="w-4/5 ml-[4%] mt-[2%] my- p-6 bg-white rounded-lg h-full">
+      <div className="w-4/5 ml-[4%] mt-[2%] my- p-6 bg-white rounded-lg h-full border">
         {/* Title */}
         <div className="mb-6">
           <h1 className="text-3xl font-bold text-foreground mb-2">Code of Conduct Commitment</h1>

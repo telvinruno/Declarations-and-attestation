@@ -10,7 +10,7 @@ export default function ReportChannels() {
      <div style={styles.mainContainer}>
      <h1 className="font-bold text-xl my-5">Reporting channels</h1>
 
-        <div style={styles.mainSubContainer} >
+        <div style={styles.mainSubContainer} className='border' >
             <div style={styles.contentHolder}>
                 <h1 style={{fontWeight: 'bold'}}>Make an email report</h1>
                 <p style={{ fontSize: '17px' }}>Send an email to the ethics department </p>
@@ -31,7 +31,7 @@ export default function ReportChannels() {
 
 
 
-        <div style={styles.mainSubContainer}>
+        <div style={styles.mainSubContainer} className='border'>
             <div style={styles.contentHolder}>
                 <h1 style={{fontWeight: 'bold'}}>Make an anonymous report</h1>
                 <p style={{ fontSize: '17px' }}>Whistle blow via anonymous channels</p>
@@ -92,7 +92,9 @@ const styles = {
     backgroundColor:'#ffffff',
      marginBottom: '3vh',
     borderRadius:'5px',
-    width:'100%'
+    width:'100%',
+    
+
     
   },
 

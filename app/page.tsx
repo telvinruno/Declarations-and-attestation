@@ -16,8 +16,6 @@ export default function Page() {
         {
           "--sidebar-width": "calc(var(--spacing) * 80)",
           "--header-height": "calc(var(--spacing) * 10)",
-          "overflowY":"auto"
-          
 
         } as React.CSSProperties
       }
@@ -25,7 +23,7 @@ export default function Page() {
       <AppSidebar variant="inset" />
       <SidebarInset  >
         <SiteHeader />
-         <ScrollArea className="h-6/7 rounded-md border">
+         <ScrollArea className="h-screen border-l">
         <div className="flex flex-1 flex-col  ">
           <div className="@container/main flex flex-1 flex-col gap-2 ">
             <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6x ">

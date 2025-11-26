@@ -24,7 +24,7 @@ export default function ConflictOfInterestMode() {
 
         {/* First item */}
         <div className="flex justify-center">
-          <div className="flex w-full bg-white justify-start items-center">
+          <div className="flex w-full bg-white justify-start items-center border rounded-md">
             <input
               type="radio"
               name="conflictType"
@@ -42,7 +42,7 @@ export default function ConflictOfInterestMode() {
 
         {/* Second item */}
         <div className="flex justify-center">
-          <div className="flex w-full bg-white justify-start items-center">
+          <div className="flex w-full bg-white justify-start items-center border rounded-md">
             <input
               type="radio"
               name="conflictType"
@@ -60,7 +60,7 @@ export default function ConflictOfInterestMode() {
 
         {/* Third item */}
         <div className="flex justify-center">
-          <div className="flex w-full bg-white justify-start items-center">
+          <div className="flex w-full bg-white justify-start items-center border rounded-md">
             <input
               type="radio"
               name="conflictType"
@@ -79,7 +79,7 @@ export default function ConflictOfInterestMode() {
 <button
   onClick={handleContinue}
   disabled={!selectedType}
-  className="block w-1/5 sm:inline-flex sm:w-1/5 items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white my-3 disabled:opacity-50"
+  className="block w-1/5 sm:inline-flex sm:w-1/5 items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white my-3 disabled:opacity-50 border"
 >
 
           Continue

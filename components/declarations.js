@@ -10,7 +10,7 @@ export default function Declaration() {
      <div style={styles.mainContainer}>
      <h1 className="font-bold text-xl my-5">Available Declarations</h1>
 
-        <div style={styles.mainSubContainer} >
+        <div style={styles.mainSubContainer} className='border'>
             <div style={styles.contentHolder}>
                 <h1 style={{fontWeight: 'bold'}}>COI declaration</h1>
                 <p style={{ fontSize: '17px' }}>Use this form to declare conflict of interest</p>
@@ -34,7 +34,7 @@ export default function Declaration() {
 
 
 
-        <div style={styles.mainSubContainer}>
+        <div style={styles.mainSubContainer} className='border'>
             <div style={styles.contentHolder}>
                 <h1 style={{fontWeight: 'bold'}}>Gift declaration</h1>
                 <p style={{ fontSize: '17px' }}>Use this form to declare a gift</p>

@@ -126,12 +126,12 @@ export default function DemoPage() {
       <AppSidebar variant="inset" />
       <SidebarInset>
         <SiteHeader />
-        <ScrollArea className="h-screen rounded-md">
-          <div className="flex flex-1 flex-col space-y-4 pb-32">
-            <div className="@container/main flex flex-1 flex-col gap-2">
-              <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
-                <div className="px-4 lg:px-6">
-                  <div className="container mx-13 my-10 rounded w-4/5 p-5 bg-white">
+        <ScrollArea className="h-screen">
+          <div className="flex flex-1 flex-col space-y-4 pb-32  ">
+            <div className="@container/main flex flex-1 flex-col gap-2 ">
+              <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6  border ">
+                <div className="px-4 lg:px-6 ">
+                  <div className="container mx-13 my-10 rounded w-4/5 p-5 bg-white border-l">
                   <div className="text-xl font-bold">Your history for the last 3 months</div>
                     <DataTableWithModal columns={columns} data={data} />
                     <div className="h-8" />

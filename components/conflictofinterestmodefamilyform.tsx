@@ -156,8 +156,8 @@ export default function FamilyRelationsForm() {
     setShowSuccessPopup(true)
   }
 
-  return (
-    <div className="w-3/4 mx-13 my-10 bg-white p-5 rounded">
+  return ( 
+    <div className="w-3/4 mx-13 my-10 bg-white p-5 rounded-md border">
       <div className="">
         {/* Header */}
         <div className="mb-8">

@@ -265,7 +265,7 @@ export default function BusinessPartnerForm() {
           </Card>
 
           {/* Submit Button - Outside Card */}
-          <div className="mt-8 mb-32 flex justify-center">
+          <div className="mt-8 mb-32 flex">
             <form onSubmit={handleSubmit} className="w-full max-w-2xl">
               <Button
                 type="submit"

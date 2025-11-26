@@ -24,7 +24,7 @@ export default function Declaration() {
      <div style={styles.mainContainer}>
        <h1 className="font-bold text-xl my-5">Available Attestations</h1>
 
-        <div style={styles.mainSubContainer} >
+        <div style={styles.mainSubContainer} className='border' >
             <div style={styles.contentHolder}>
                 <h1 style={{fontWeight: 'bold'}}>Commit to code of conduct</h1>
                 <p style={{ fontSize: '17px' }}>Confirm your commitment to the company's code of conduct by completing this declaration</p>
@@ -45,7 +45,7 @@ export default function Declaration() {
 
 
 
-        <div style={styles.mainSubContainer}>
+        <div style={styles.mainSubContainer} className='border'>
             <div style={styles.contentHolder}>
                 <h1 style={{fontWeight: 'bold'}}>Commit to insider trader policy</h1>
                 <p style={{ fontSize: '17px' }}>Use this form to commit to the company's insider trading policy</p>
@@ -68,7 +68,7 @@ export default function Declaration() {
 
 
 
-        <div style={styles.mainSubContainer}>
+        <div style={styles.mainSubContainer} className='border'>
             <div style={styles.contentHolder}>
                 <h1 style={{fontWeight: 'bold'}}>Confirm training</h1>
                 <p style={{ fontSize: '17px' }} >Use this form to confirm training received</p>

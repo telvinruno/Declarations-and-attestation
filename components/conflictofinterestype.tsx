@@ -17,7 +17,7 @@ export default function ConflictOfInterestType() {
 
         {/* First item */}
         <div className="flex  justify-center">
-          <div className="flex w-full bg-white justify-start rounded-lg">
+          <div className="flex w-full bg-white justify-start rounded-lg border">
             <div className="flex items-center px-4 py-2">
               <TbUsersGroup size={25} />
             </div>
@@ -37,7 +37,7 @@ export default function ConflictOfInterestType() {
 
         {/* Second item */}
         <div className="flex justify-center">
-          <div className="flex w-full bg-white justify-start rounded-lg">
+          <div className="flex w-full bg-white justify-start rounded-lg border">
             <div className="flex items-center px-4 py-2">
               <LuBriefcaseBusiness size={25}  />
             </div>
@@ -57,7 +57,7 @@ export default function ConflictOfInterestType() {
 
         {/* Third item */}
         <div className="flex justify-center">
-          <div className="flex w-full bg-white justify-start rounded-lg">
+          <div className="flex w-full bg-white justify-start rounded-lg border">
             <div className="flex items-center px-4 py-2">
               <VscLinkExternal size={25}  />
             </div>
@@ -83,7 +83,7 @@ export default function ConflictOfInterestType() {
 
         {/* Fourth item */}
         <div className="flex justify-center">
-          <div className="flex w-full bg-white justify-start rounded-lg">
+          <div className="flex w-full bg-white justify-start rounded-lg border">
             <div className="flex items-center px-4 py-2">
               <CiSquareMinus size={25} />
             </div>

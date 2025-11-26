@@ -69,7 +69,7 @@ export default function CodeOfConduct() {
 
   return (
     <>
-      <div className="w-3/4 mx-13 my-5 p-6 bg-white dark:bg-slate-900 rounded-lg">
+      <div className="w-3/4 mx-13 my-5 p-6 bg-white dark:bg-slate-900 rounded-lg border">
         {/* Title */}
         <div className="mb-6">
           <h1 className="text-3xl font-bold text-foreground mb-2">Company Code on Gifts and Rewards</h1>

@@ -66,13 +66,13 @@ export default function ProfileForm() {
 
   return (
     <div className="w-full  mx-1% py-10 px-4">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <Form {...form} >
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 ">
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem className="w-1/4">
+              <FormItem className="w-1/4 border rounded">
                 <FormControl>
                   <Input
                     type="email"
@@ -103,7 +103,7 @@ export default function ProfileForm() {
             )}
           />
 
-          <Button type="submit" disabled={loading}>
+          <Button type="submit" disabled={loading} className="border">
             {loading ? "Sending..." : "Submit"}
           </Button>
         </form>
