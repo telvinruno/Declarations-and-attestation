@@ -11,20 +11,13 @@ import {
 } from "@tabler/icons-react"
 
 
-import {MdOutlineDashboard} from 'react-icons/md'
 
-import { NavDocuments } from "@/components/nav-documents"
 import { NavMain } from "@/components/nav-main"
 import { NavSecondary } from "@/components/nav-secondary"
 // import { NavUser } from "@/components/nav-user"
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
-  SidebarHeader,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
 } from "@/components/ui/sidebar"
 
 const data = {
@@ -80,9 +73,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar  {...props} className="bg-white">
       <SidebarContent>
-        <NavMain items={data.navMain} className="h-3/7 fixed top-30 left-4" />
+        <NavMain items={data.navMain} className="h-3/7 fixed top-30 left-4 w-full" />
         <div className="h-2/7"></div>
-        <NavSecondary items={data.navSecondary} className="fixed bottom-4 left-4" />
+        <NavSecondary items={data.navSecondary} className="fixed bottom-4 left-4 w-full" />
       </SidebarContent>
     </Sidebar>
   )
