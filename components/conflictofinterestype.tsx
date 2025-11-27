@@ -30,7 +30,7 @@ export default function ConflictOfInterestType() {
                    <Image 
                       src={family}
                       alt="Error"  
-                      style={{ width:'100%' }} 
+                      style={{ width:'80%' }} 
                   />
 
             </div>
@@ -55,7 +55,7 @@ export default function ConflictOfInterestType() {
                    <Image 
                       src={business}
                       alt="Error"  
-                      style={{ width:'100%' }} 
+                      style={{ width:'80%' }} 
                   />
             </div>
             <div className="flex flex-col justify-start py-1 px-4 flex-1">
@@ -79,7 +79,7 @@ export default function ConflictOfInterestType() {
                      <Image 
                       src={external}
                       alt="Error"  
-                      style={{ width:'100%' }} 
+                      style={{ width:'80%' }} 
                   />
             </div>
             <div className="flex flex-col justify-start py-1 px-4 flex-1">
@@ -109,7 +109,7 @@ export default function ConflictOfInterestType() {
                     <Image 
                       src={nada}
                       alt="Error"  
-                      style={{ width:'100%' }} 
+                      style={{ width:'80%' }} 
                   />
             </div>
             <div className="flex flex-col justify-start py-1 px-4 flex-1">
